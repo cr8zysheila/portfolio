@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Q: why put the scripts in the head? it slows the page rendering -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6"><img class="img-responsive" src="https://sumozasnullpointer.files.wordpress.com/2015/04/udacity-logo.jpg"></div>
+        <div class="col-sm-6 text-uppercase text-right">
+          <h1>Jane Doette</h1>
+          <h3>Front-end Ninja</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">       
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">       
+          <img class="img-responsive" src="images/1140x520.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">   
+          <h2>Featured Work</h2>
+          </div>
+      </div>
+
+      <div class = "row">
+
+        <div class = "col-sm-4">
+          <img class="img-responsive" src="images/555x300-112.jpg" data-toggle="modal" data-target="#projectModal1">
+          <h3>Appify</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+
+        <div class = "col-sm-4">
+          <img class="img-responsive" src="images/555x300-777.jpg" data-toggle="modal" data-target="#projectModal2">
+          <h3>Appify</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+
+        <div class = "col-sm-4">
+          <img class="img-responsive" src="images/555x300-601.jpg" data-toggle="modal" data-target="#projectModal2">
+          <h3>Appify</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+
+      </div>
+    
+    </div>
+
+
+  <!-- Modal -->
+  <!--Q: what does tabindex='-1' do? -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="project1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="project1Label">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placehold.it/555x300">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
